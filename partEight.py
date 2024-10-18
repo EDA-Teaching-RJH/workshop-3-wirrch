@@ -2,18 +2,31 @@ import random
 import time
 
 inventory = []
-playerName = ""
+player_name = ""
 
 def main():
-    input("You wake to the sound of a window smashing.")
-    input("Creeping through the dark halls of your flat,")
-    input("you hear scurrying of feet against the carpet behind you")
-    input("and before you can turn to face your intruder,")
-    input("you get knocked to the floor and fall unconscious.")
-    input("You wake, alone in the dry heat of the Brazilian streets.")
-    gameName = "WELCOME TO BRAZIL"
-    for char in gameName:
-        print(char, end="")
-        time.sleep(0.2)
+    while player_name == "":
+        player_name = input("Enter player name: ")
+
+    
+
+    print("Good...")
+    print(f"{player_name} arises in a dark cavern,")
+    print(f"The Earth's heart trembles, {player_name} collapses onto the uneven cave floor.")
+    print(f"Echos of the rumble dissapear into the stone surroundings.")
+    print(f"Blinded in pitch blackness, {player_name} feels the floor for equipment...")
+
+#def chapter1():
+
+
+def obtainItem(item_name, amount):
+    print(f"{amount} {item_name} aquired!")
+    inventory.append
+
+def death():
+    print(f"You have lead {player_name} to their death.")
+    print("Perhaps it was inevitable.")
+    input("Press [ENTER] to send a new victim...")
+    main()
 
 main()
