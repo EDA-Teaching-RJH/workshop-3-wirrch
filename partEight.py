@@ -4,6 +4,9 @@ import time
 inventory = []
 player_name = ""
 
+#Attributes (In order LtR): Strength, Dexterity, Intelligence, Wisdom
+player_attributes = []
+
 def main():
     while player_name == "":
         player_name = input("Enter player name: ")
